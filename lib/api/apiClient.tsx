@@ -19,9 +19,9 @@ export async function apiClient(
   options: optionsType & RequestInit = ({} = {})
 ) {
   const { baseUrl = "", headers = {}, ...rest } = options;
-  console.log(url)
-  console.log(options)
-  console.log(`${baseUrl}${url}`)
+  // console.log(url)
+  // console.log(options)
+  // console.log(`${baseUrl}${url}`)
   const response = await fetch(`${baseUrl}${url}`, {
     headers: {
       "Content-Type": "application/json",
