@@ -16,6 +16,7 @@ const  DynamicRoute= ()=> {
         {
           console.warn("No title found")
         }
+        console.log('result', result)
         setTitle(result.title);
       }
       catch(e){
